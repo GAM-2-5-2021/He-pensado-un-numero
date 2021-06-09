@@ -32,7 +32,7 @@ gornji = int(input()) #unos gornje granice
 r = random.randint(donji, gornji) #random broj unutar intervala
 
 print_slow("\n\tŽao mi je, ali imaš samo 7 pokušaja\n")
-print_slow("\t\t\t\t\t(nije mi žao)\n") #puno tabova da se tekst bude bliže kraju gornjeg ispisa
+print_slow("\t\t\t\t\t(nije mi žao)\n") #puno tabova da tekst bude bliže kraju gornjeg ispisa
 
 
 #while petlja za pokušaje
@@ -44,6 +44,7 @@ while brojač < pokušaj: #while petlja kojom povećavamo brojač za 1
     print_slow("Ma bravo! Pile moje! Uspio si u ")
     print_slow(str(brojač)) #pretvaram broj iz brojača u string kako bi ga mogao ispisati kao tekst
     print_slow(" pokušaja") #kada se ovo dogodi, petlja će se prekinuti
+    break
   elif r > gađaj: #ako je random veći od našeg unosa izvršava se ova elif petlja
     print_slow("Gađaj malo više\n")
   elif r < gađaj: #ako je random niži od našeg unosa izvršava se ova elif petlja
@@ -55,7 +56,7 @@ if brojač >= pokušaj: #petlja koja prekida program ako broj pokušaja premašu
   print_slow("\n *Comrade Military Radio*") 
   print_slow("\n Mission failed we'll get em next time")
   print_slow("\n Broj je bio ")
-  print_slow(str(r)) #pretvaram broj iz brojača u string kako bi ga mogao ispisati kao tekst
+  print_slow(str(r)) #pretvaram random broj u string kako bi ga mogao ispisati kao tekst
   print_slow("\n *Comrade Military Radio Going Dark*")
 
 
